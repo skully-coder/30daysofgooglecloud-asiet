@@ -99,9 +99,9 @@ def data_gathering(link):
             if int(check) >= 22:
                 #print(key2,date[1])
                 if key2 in track1:
-                    track1completed.append(key2)
+                    track1completed.append("<br>" + key2)
                 if key2 in track2:
-                    track2completed.append(key2)
+                    track2completed.append("<br>" + key2)
         elif date[0] == 'Oct':
             #print(date)
             check = date[1].split(',')[0]
@@ -110,9 +110,9 @@ def data_gathering(link):
                 #print(date)
                 #print(key2,date[1])
                 if key2 in track1:
-                    track1completed.append(key2)
+                    track1completed.append("<br>" + key2)
                 if key2 in track2:
-                    track2completed.append(key2)
+                    track2completed.append("<br>" + key2)
 
 
         #print(key2,date)

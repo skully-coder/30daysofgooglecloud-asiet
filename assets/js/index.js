@@ -9,7 +9,7 @@ function getData() {
     );
     xh.setRequestHeader("Content-Type", "application/json");
     xh.send();
-    xh.onload = function () {
+    xh.onload = function() {
         if (this.status == 200) {
             // // console.log(this.responseText)
             var data = JSON.parse(this.responseText);
@@ -20,8 +20,8 @@ function getData() {
                 let newRow = document.createElement('li');
                 newRow.classList = 'c-list__item';
                 newRow.innerHTML = `
-                    <div class="c-list__grid">
-                        <div class="c-flag c-place u-bg--transparent">${i}</div>
+                    <div class="c-list__grid" >
+                        <div class="c-flag c-place u-bg--transparent" style="text-align: center;">${i}</div>
                         <div class="c-media">
                         <a href="${member.qlabid}" rel="noopener" target="_blank">
                             <img class="c-avatar c-media__img" src="${member.dp}" />
@@ -34,7 +34,7 @@ function getData() {
                                 <a class="c-media__link ">Track 2 - ${member.track2}</a>
                             </div>
                         </div>
-                        <div class="u-text--right c-kudos">
+                        <div class="u-text--right c-kudos" style=" text-align: center;"> 
                             <div class="u-mt--8">
                                 <strong>${member.qcomplete_no}</strong>
                             </div>
